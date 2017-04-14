@@ -1,0 +1,15 @@
+{
+  "name": "readme-to-dockerhub",
+  "version": "0.1.0",
+  "description": "Pushes the given path to docker hub",
+  "main": "index.js",
+  "dependencies": {
+    "docker-hub-api": "^0.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sheogorath <sheogorath@shivering-isles.com>",
+  "license": "GPL-3.0"
+}

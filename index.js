@@ -15,7 +15,7 @@ dockerHubAPI.login(process.env.DOCKERHUB_USERNAME, process.env.DOCKERHUB_PASSWOR
     const readme = fs.readFileSync(filePath, {encoding: 'utf-8'});
 
     // Update repository description
-    dockerHubAPI.setRepositoryDescription(process.env.DOCKERHUB_USERNAME, process.env.DOCKERHUB_REPO, {full: readme})
+    dockerHubAPI.setRepositoryDescription((process.env.DOCKERHUB_REPO_PREFIX || process.env.DOCKERHUB_USERNAME), (process.env.DOCKERHUB_REPO_NAME || process.env.DOCKERHUB_REPO), {full: readme})
 
 });
 

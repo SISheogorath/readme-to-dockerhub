@@ -51,9 +51,10 @@ If your description is not named `README.md` mount the file directory using `-v 
 The user you use to push the README.md need to be admin of the repository.
 
 
-# Implementationsi and references of this image
+# Implementations and references of this image
 
 * [InspIRCd](https://github.com/Adam-/inspircd-docker/blob/master/.travis.yml)
+* [Anope](https://github.com/Adam-/anope-docker/blob/master/.travis.yml)
 
 
 # Updates and updating

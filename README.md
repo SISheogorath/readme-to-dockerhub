@@ -55,6 +55,8 @@ The user you use to push the README.md need to be admin of the repository.
 
 * [InspIRCd](https://github.com/Adam-/inspircd-docker/blob/master/.travis.yml)
 * [Anope](https://github.com/Adam-/anope-docker/blob/master/.travis.yml)
+* [Minecraft](https://github.com/SISheogorath/minecraft-docker/blob/master/.travis.yml)
+* [isso](https://github.com/SISheogorath/isso-docker/blob/master/.travis.yml)
 
 
 # Updates and updating
@@ -78,7 +80,7 @@ Everything in [this repository](https://github.com/SISheogorath/readme-to-docker
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 17.03.1-CE.
+This image is officially supported on Docker version 17.06.0-CE.
 
 Support for older versions (down to 1.12) is provided on a best-effort basis.
 

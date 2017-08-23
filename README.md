@@ -1,6 +1,8 @@
 README to Docker Hub
 ===
 
+[![MadIRC #Admins](https://img.shields.io/badge/MadIRC-%23Admins-green.svg)](https://webclient.madirc.net/?join=%23Admins)
+
 This is a quick hack to push README.md files to Docker hub.
 
 

@@ -35,11 +35,13 @@ This image uses environment variables for configuration.
 |`DOCKERHUB_PASSWORD`    |no default           |Password of the `DOCKERHUB_USERNAME`-user           |
 |`DOCKERHUB_REPO_PREFIX` |`$DOCKERHUB_USERNAME`|Organisation or username for the repository         |
 |`DOCKERHUB_REPO_NAME`   |no default           |Name of the repository you want to push to          |
+|`README_PATH`           |`/data/README.md`    |Path to the README.me to push                       |
 
 
 ## Mount the README.md
 
-This image always pushes the file `/data/README.md` as full description to Docker Hub.
+By default, if the `README_PATH` environment variable is not set, this image always pushes the file
+`/data/README.md` as full description to Docker Hub.
 
 For GitHub repositories you can use `-v /path/to/repository:/data/`.
 

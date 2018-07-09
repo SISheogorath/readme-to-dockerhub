@@ -11,7 +11,7 @@ dockerHubAPI.login(process.env.DOCKERHUB_USERNAME, process.env.DOCKERHUB_PASSWOR
     dockerHubAPI.setLoginToken(info.token);
 }).then(function () {
     // Load README
-    var filePath = path.join('/data' , 'README.md');
+    var filePath = process.env.README_PATH || path.join('/data' , 'README.md');
     const readme = fs.readFileSync(filePath, {encoding: 'utf-8'});
 
     // Update repository description

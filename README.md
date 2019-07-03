@@ -36,7 +36,7 @@ This image uses environment variables for configuration.
 |`DOCKERHUB_REPO_PREFIX` |`$DOCKERHUB_USERNAME`|Organisation or username for the repository         |
 |`DOCKERHUB_REPO_NAME`   |no default           |Name of the repository you want to push to          |
 |`README_PATH`           |`/data/README.md`    |Path to the README.me to push                       |
-
+|`SHORT_DESCRIPTION`     |no default           |Short description for the Dockerhub repo            |
 
 ## Mount the README.md
 

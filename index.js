@@ -12,10 +12,13 @@ dockerHubAPI.login(process.env.DOCKERHUB_USERNAME, process.env.DOCKERHUB_PASSWOR
 }).then(function () {
     // Load README
     var filePath = process.env.README_PATH || path.join('/data' , 'README.md');
-    const readme = fs.readFileSync(filePath, {encoding: 'utf-8'});
+    var json = JSON.stringify({    
+      full: fs.readFileSync(filePath, {encoding: 'utf-8'}),
+      short: process.env.SHORT_DESCRIPTION || undefined
+    })
 
     // Update repository description
-    dockerHubAPI.setRepositoryDescription((process.env.DOCKERHUB_REPO_PREFIX || process.env.DOCKERHUB_USERNAME), (process.env.DOCKERHUB_REPO_NAME || process.env.DOCKERHUB_REPO), {full: readme})
+    dockerHubAPI.setRepositoryDescription((process.env.DOCKERHUB_REPO_PREFIX || process.env.DOCKERHUB_USERNAME), (process.env.DOCKERHUB_REPO_NAME || process.env.DOCKERHUB_REPO), JSON.parse(json))
 
 });
 

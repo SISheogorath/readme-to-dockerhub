@@ -1,6 +1,6 @@
-FROM node:6.10-alpine
+FROM node:10.16.0-alpine
 
-COPY index.js package.json /app/
+COPY index.js package*.json /app/
 
 WORKDIR /app/
 

@@ -3,8 +3,12 @@
   "version": "0.1.0",
   "description": "Pushes the given path to docker hub",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/SISheogorath/readme-to-dockerhub.git"
+  },
   "dependencies": {
-    "docker-hub-api": "^0.5.1"
+    "docker-hub-api": "^0.8.0"
   },
   "devDependencies": {},
   "scripts": {

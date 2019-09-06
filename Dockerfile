@@ -1,4 +1,4 @@
-FROM node:12.9-alpine
+FROM node:12.10.0-alpine
 
 COPY index.js package*.json /app/
 

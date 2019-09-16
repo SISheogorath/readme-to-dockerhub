@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "docker-hub-api": "^0.8.0",
-    "snyk": "^1.226.1"
+    "snyk": "^1.227.0"
   },
   "devDependencies": {},
   "scripts": {

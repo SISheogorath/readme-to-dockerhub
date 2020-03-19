@@ -1,7 +1,7 @@
 README to Docker Hub
 ===
 
-[![MadIRC #Admins](https://img.shields.io/badge/MadIRC-%23Admins-green.svg)](https://webclient.madirc.net/?join=%23Admins)
+[![Matrix channel #sheogorath:shivering-isles.com](https://img.shields.io/badge/Matrix-%23sheogorath%3Ashivering--isles.com-informational.svg?logo=matrix)](https://matrix.to/#/#sheogorath:shivering-isles.com) [![Mastodon at microblog.shivering-isles.com](https://img.shields.io/badge/Follow-%40sheogorath%40shivering--isles.com-blue?logo=mastodon)](https://microblog.shivering-isles.com/@sheogorath) [![Twitter @SISheogorath](https://img.shields.io/badge/Follow-%40SISheogorath-blue?logo=twitter)](https://twitter.com/SISheogorath)
 
 This is a quick hack to push README.md files to Docker hub.
 
@@ -33,7 +33,7 @@ This image uses environment variables for configuration.
 |------------------------|---------------------|----------------------------------------------------|
 |`DOCKERHUB_USERNAME`    |no default           |The Username (not mail address) used to authenticate|
 |`DOCKERHUB_PASSWORD`    |no default           |Password of the `DOCKERHUB_USERNAME`-user           |
-|`DOCKERHUB_REPO_PREFIX` |`$DOCKERHUB_USERNAME`|Organisation or username for the repository         |
+|`DOCKERHUB_REPO_PREFIX` |`$DOCKERHUB_USERNAME`|Organization or username for the repository         |
 |`DOCKERHUB_REPO_NAME`   |no default           |Name of the repository you want to push to          |
 |`README_PATH`           |`/data/README.md`    |Path to the README.me to push                       |
 |`SHORT_DESCRIPTION`     |no default           |Short description for the Dockerhub repo            |
@@ -81,16 +81,6 @@ View [license information](https://www.npmjs.com/package/docker-hub-api) for the
 
 Everything in [this repository](https://github.com/SISheogorath/readme-to-dockerhub) is published under [GPL-3](https://spdx.org/licenses/GPL-3.0).
 
-
-# Supported Docker versions
-
-This image is officially supported on Docker version 17.06.0-CE.
-
-Support for older versions (down to 1.12) is provided on a best-effort basis.
-
-Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
-
-
 # User Feedback
 
 ## Issues
@@ -100,4 +90,6 @@ If you have any problems with or questions about this image, please contact us t
 
 ## Contributing
 
-You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
+You are invited to contribute new features, fixes, or updates, large or small; I'm always thrilled to receive pull requests.
+
+General guidelines for development can be found at https://shivering-isles.com/contribute

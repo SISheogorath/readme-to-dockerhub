@@ -6,4 +6,4 @@ WORKDIR /app/
 
 RUN npm install
 
-ENTRYPOINT ["node", "/app/index.js"]
+ENTRYPOINT ["node", "--unhandled-rejections=strict", "/app/index.js"]
